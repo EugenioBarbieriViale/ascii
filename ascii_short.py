@@ -5,7 +5,7 @@ img = Image.open("input.jpeg")
 pixelmap = img.load()
 ascii = " .,:;ox%#@"
 
-def resize_img(img, new_width=70):
+def resize_img(img, new_width=150):
     width, height = img.size
     new_height = int(new_width * (height / width))
     return (new_width, new_height)
@@ -21,7 +21,7 @@ for i in range(width):
     for j in range(height):
         p = img.getpixel((i,j))
 
-        cols.append(ascii[p*len(ascii)//255])
+        cols.append(ascii[p*(len(ascii)-1)//255])
     rows.append(cols)
 
 for row in rows:

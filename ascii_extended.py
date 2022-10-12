@@ -6,7 +6,7 @@ pixelmap = img.load()
 list = ['$', '@', 'B', '%', '8', '&', 'W', 'M', '#', '*', 'o', 'a', 'h', 'k', 'b', 'd', 'p', 'q', 'w', 'm', 'Z', 'O', '0', 'Q', 'L', 'C', 'J', 'U', 'Y', 'X', 'z', 'c', 'v', 'u', 'n', 'x', 'r', 'j', 'f', 't', '/', '\\', '|', '(', ')', '1', '{', '}', '[', ']', '?', '-', '_', '+', '~', '<', '>', 'i', '!', 'l', 'I', ';', ':', ',', '"', '^', '`', "'", '.', ' ']
 ascii = [list[-i] for i in range(len(list)+1) if i != 0]
 
-def resize_img(img, new_width=70):
+def resize_img(img, new_width=150):
     width, height = img.size
     new_height = int(new_width * (height / width))
     return (new_width, new_height)
@@ -22,7 +22,7 @@ for i in range(width):
     for j in range(height):
         p = img.getpixel((i,j))
 
-        cols.append(ascii[p*len(ascii)//255])
+        cols.append(ascii[p*(len(ascii)-1)//255])
     rows.append(cols)
 
 for row in rows:
