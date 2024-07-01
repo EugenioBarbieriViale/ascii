@@ -8,7 +8,7 @@ ascii = [list[-i] for i in range(len(list)+1) if i != 0]
 
 def resize_img(img, new_width=150):
     width, height = img.size
-    new_height = int(new_width * (height / width))
+    new_height = int(new_width * (height / width) / 2)
     return (new_width, new_height)
 
 img = img.resize(resize_img(img))
