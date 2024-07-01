@@ -17,10 +17,10 @@ width, height = img.size
 img = img.convert("L")
 
 rows = []
-for i in range(width):
+for i in range(height):
     cols = []
-    for j in range(height):
-        p = img.getpixel((i,j))
+    for j in range(width):
+        p = img.getpixel((j,i))
 
         cols.append(ascii[p*(len(ascii)-1)//255])
     rows.append(cols)
