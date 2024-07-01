@@ -7,7 +7,7 @@ ascii = " .,:;ox%#@"
 
 def resize_img(img, new_width=150):
     width, height = img.size
-    new_height = int(new_width * (height / width))
+    new_height = int(new_width * (height / width) / 2)
     return (new_width, new_height)
 
 img = img.resize(resize_img(img))
