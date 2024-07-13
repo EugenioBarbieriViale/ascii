@@ -4,7 +4,7 @@ img = Image.open("man.png")
 
 # Change pixel block size
 r = 5
-c = 10
+c = 13
 
 
 pixelmap = img.load()
