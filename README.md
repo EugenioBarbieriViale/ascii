@@ -1,5 +1,5 @@
 # Ascii in python
-For videos the python library ![opencv](https://pypi.org/project/opencv-python/) is needed.
+For videos the python library [opencv](https://pypi.org/project/opencv-python/) is needed.
 ![input](https://pngimg.com/uploads/thinking_man/thinking_man_PNG11595.png)
 
 ## By blocks of pixels (no resizing)
