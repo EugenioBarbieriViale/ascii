@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open("man.png")
+img = Image.open("../images/man.png")
 
 pixelmap = img.load()
 ascii = " .,:;ox%#@"
