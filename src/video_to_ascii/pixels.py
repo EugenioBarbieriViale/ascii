@@ -2,6 +2,8 @@ import cv2
 from os import system
 from PIL import Image
 
+system("mkdir frames/")
+
 system("clear")
 video = cv2.VideoCapture("cat.webm")
 
@@ -51,3 +53,4 @@ for i in range(frame_number):
     for row in rows:
         print("".join(row))
 
+system("rm -r frames/")

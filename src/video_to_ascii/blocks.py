@@ -2,6 +2,8 @@ import cv2
 from os import system
 from PIL import Image
 
+system("mkdir frames/")
+
 system("clear")
 video = cv2.VideoCapture("cat.webm")
 
@@ -53,3 +55,5 @@ for i in range(frame_number):
     c = 10
 
     draw(img, width, height)
+
+system("rm -r frames/")
