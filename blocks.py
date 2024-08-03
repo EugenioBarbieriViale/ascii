@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open("../../images/man.png")
+img = Image.open("images/man.png")
 
 # Change pixel block size
 r = 5
